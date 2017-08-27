@@ -131,3 +131,5 @@ Promise.all = function (promises) {
     });
   });
 };
+
+exports.Promise = Promise;
