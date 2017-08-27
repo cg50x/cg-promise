@@ -131,18 +131,3 @@ Promise.all = function (promises) {
     });
   });
 };
-
-
-function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-delay(2000).then(function () {
-  console.log('1');
-  return delay(2000);
-}).then(function () {
-  console.log('2');
-  return delay(2000);
-}).then(function () {
-  console.log('3');
-});
