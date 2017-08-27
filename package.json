@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/cg50x/cg-promise.git"
   },
-  "author": "Chris Guevara (chrismguevara@gmail.com)",
+  "author": "Chris Guevara <chrismguevara@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cg50x/cg-promise/issues"
