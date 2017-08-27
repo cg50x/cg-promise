@@ -1,0 +1,19 @@
+{
+  "name": "cg-promise",
+  "version": "1.0.0",
+  "description": "A Promise implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cg50x/cg-promise.git"
+  },
+  "author": "Chris Guevara (chrismguevara@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cg50x/cg-promise/issues"
+  },
+  "homepage": "https://github.com/cg50x/cg-promise#readme"
+}
