@@ -1,0 +1,8 @@
+node_modules/
+.rpt2_cache/
+
+.gitignore
+.npmignore
+cg-promise.ts
+rollup.config.js
+tsconfig.json
