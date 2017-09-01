@@ -3,7 +3,7 @@ import uglify from 'rollup-plugin-uglify';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 
 export default [{
-  input: 'cg-promise.ts',
+  input: 'src/cg-promise.ts',
   output: {
     file: 'dist/cg-promise.js',
     format: 'umd',
@@ -15,7 +15,7 @@ export default [{
     typescript()
   ]
 }, {
-  input: 'cg-promise.ts',
+  input: 'src/cg-promise.ts',
   output: {
     file: 'dist/cg-promise.min.js',
     format: 'umd',
