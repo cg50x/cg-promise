@@ -1,4 +1,10 @@
-export default function Promise(cb) {
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.cgPromise = factory());
+}(this, (function () { 'use strict';
+
+function Promise(cb) {
   var status = 'none';
   var payload = null;
   var thenCallbacks = [];
@@ -131,3 +137,7 @@ Promise.all = function (promises) {
     });
   });
 };
+
+return Promise;
+
+})));
