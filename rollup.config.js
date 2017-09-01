@@ -1,13 +1,30 @@
 import typescript from 'rollup-plugin-typescript2';
+import uglify from 'rollup-plugin-uglify';
+import sourcemaps from 'rollup-plugin-sourcemaps';
 
-export default {
-  input: 'index.ts',
+export default [{
+  input: 'cg-promise.ts',
   output: {
-  	file: 'dist/cg-promise.js',
-  	format: 'umd',
-  	name: 'CGPromise'
+    file: 'dist/cg-promise.js',
+    format: 'umd',
+    name: 'CGPromise'
   },
+  sourcemap: true,
   plugins: [
+    sourcemaps(),
     typescript()
   ]
-};
+}, {
+  input: 'cg-promise.ts',
+  output: {
+    file: 'dist/cg-promise.min.js',
+    format: 'umd',
+    name: 'CGPromise'
+  },
+  sourcemap: true,
+  plugins: [
+    sourcemaps(),
+    typescript(),
+    uglify()
+  ]
+}];

@@ -150,3 +150,4 @@ CGPromise.all = function (promises) {
 return CGPromise;
 
 })));
+//# sourceMappingURL=cg-promise.js.map
